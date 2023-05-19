@@ -23,3 +23,14 @@ export const ADD_USER = gql`
         }
     }    
 `
+
+export const ADD_ALGO = gql`
+    mutation addAlgo($number: Int!, $starterCode: String!, $readMe: String!, $name: String!) {
+        addAlgo(number: $number, starterCode: $starterCode, readMe: $readMe, name: $name) {
+            number
+            starterCode
+            readMe
+            name
+        }
+    }
+`
