@@ -2,33 +2,39 @@
     "name": "algo-tool",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "server/server.js",
     "scripts": {
-      "start": "node server/server.js",
-      "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-      "install": "cd server && npm i && cd ../client && npm i",
-      "seed": "cd server && npm run seed",
-      "build": "cd client && npm run build"
+        "start": "node server/server.js",
+        "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+        "install": "cd server && npm i && cd ../client && npm i",
+        "seed": "cd server && npm run seed",
+        "build": "cd client && npm run build"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/JWatkins28/algo-tool.git"
+        "type": "git",
+        "url": "git+https://github.com/JWatkins28/algo-tool.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "concurrently": "^5.1.0"
+        "concurrently": "^5.1.0"
     },
     "bugs": {
-      "url": "https://github.com/JWatkins28/algo-tool/issues"
+        "url": "https://github.com/JWatkins28/algo-tool/issues"
     },
     "homepage": "https://github.com/JWatkins28/algo-tool#readme",
     "dependencies": {
-      "@types/react-router-dom": "^5.3.3",
-      "bootstrap": "^5.2.3",
-      "react-bootstrap": "^2.7.2",
-      "react-dropzone": "^14.2.3"
+        "@emotion/react": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.13.0",
+        "@types/react-router-dom": "^5.3.3",
+        "@uiw/react-textarea-code-editor": "^2.1.1",
+        "axios": "^1.3.4",
+        "bootstrap": "^5.2.3",
+        "react-bootstrap": "^2.7.2",
+        "react-dropzone": "^14.2.3",
+        "react-icons": "^4.8.0",
+        "react-markdown": "^8.0.7"
     }
-  }
-  
+}

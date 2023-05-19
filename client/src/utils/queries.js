@@ -5,11 +5,29 @@ export const GET_ME = gql`
         me {
             _id
             username
-            algos {
-                _id
-                number
-                code
-            }
+        }
+    }
+`
+
+export const GET_ALGO = gql`
+    query Algo($number: Int!) {
+        algo(number: $number) {
+            number
+            starterCode
+            readMe
+            name
+        }
+    }
+`
+
+export const GET_ALGOS = gql`
+    query Algos {
+        algos {
+            _id
+            number
+            starterCode
+            readMe
+            name
         }
     }
 `

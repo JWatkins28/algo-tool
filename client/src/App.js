@@ -37,15 +37,11 @@ function App() {
       <Router>
         <>
           <Routes>
-            <Route
-              exact path='/'
-              element={<Signup />}
-            />
+            <Route exact path='/' element={<Signup />} />
             <Route path='/login' element={<Login />} />
             <Route path='/main' element={<Main />} />
-            <Route
-              path='*'
-              element={<h1 className='display-2'>Wrong page!</h1>}
+            <Route path='/main/:algoId' element={<Main />} />
+            <Route path='*' element={<h1 className='display-2'>Wrong page!</h1>}
             />
           </Routes>
         </>

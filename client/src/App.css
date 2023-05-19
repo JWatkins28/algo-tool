@@ -44,3 +44,119 @@ small {
     color: red;
 }
 
+.algopage-container {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction:row;
+}
+
+.algo-l {
+    padding-top: 35px;
+    padding-left: 20px;
+    width: 50%;
+    color: white;
+}
+
+
+.algo-r {
+    padding-top: 35px;
+    padding-right: 20px;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.algo-tr {
+    height: 60%;
+}
+
+.algo-br {
+    padding-top: 20px;
+    height: 40%;
+}
+
+.algo-list {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3px 0 3px;
+}
+
+.algo-list > li {
+    height: 40px;
+    display: grid;
+    align-items: center;
+    border-top: solid;
+    border-bottom: solid; 
+    margin: 5px 0 5px 0;
+    list-style-type: none;
+    background-color: var(--accents);
+    color: white;
+    user-select: none;
+}
+
+.algo-list > li:hover {
+    transition: .5s;
+    background-color: var(--bgcolor);
+    cursor: pointer;
+}
+
+.codebox {
+    resize: none;
+    /* height: 90%; */
+    /* width: 100%; */
+    /* background-color: var(--accents); */
+    /* color: white; */
+}
+
+.codeoutput {
+    height: 80%;
+    width: 100%;
+    background-color: var(--accents);
+    color: white;
+}
+
+.sandwich {
+    position: fixed;
+    width: fit-content;
+}
+
+.sandwich-open {
+    border-right: solid var(--accents);
+    width: 50vw;
+    max-width: 483px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgcolor);
+}
+
+.sandwich-open > .burger {
+    align-self: flex-end;
+}
+
+.sandwich-close {
+    width: auto;
+}
+
+.hamburger {
+    color: white;
+    height: 35px;
+    width: auto;
+}
+
+.nav-t {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.readme {
+    color: white;
+}
+
+h1 { 
+    color: white;
+}

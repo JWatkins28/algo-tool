@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const algoSchema = new Schema(
     {
@@ -6,7 +6,15 @@ const algoSchema = new Schema(
             type: Number,
             required: true,
         },
-        code: {
+        starterCode: {
+            type: String,
+            required: true
+        },
+        readMe: {
+            type: String,
+            required: true
+        },
+        name: {
             type: String,
             required: true
         }
@@ -18,4 +26,6 @@ const algoSchema = new Schema(
     },
 )
 
-module.exports = algoSchema;
+const Algos = model('Algos', algoSchema);
+
+module.exports = Algos;
